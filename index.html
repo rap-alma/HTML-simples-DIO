@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução ao HTML</title>
+</head>
+
+<body>
+
+  <!-- Título principal -->
+  <h1>Introdução ao HTML na prática</h1>
+  <hr>
+  <h2 id="Inicio"> Apresentação</h2>
+  <p> Nesse artigo será ensinado como criar uma página HTML simples. Passaremos pelos tópicos:
+    <!-- Índice -->
+  <ol>
+    <li><a href="#Ferramentas">Ferramentas utilizadas</a></li>
+    <ul>
+      <li><a href="#VisualStudioCode">Visual Studio Code</a></li>
+      <li><a href="#Inspetor">Inspetor de elementos</a></li>
+    </ul>
+    <li><a href="#Estrutura">Estruturas básicas do HTML</a></li>
+    <li><a href="#Tags">Falando sobre tags</a></li>
+    <li><a href="#Atributos">Atributos básicos</a></li>
+    <li><a href="#Executando">Executando uma página</a></li>
+    <li><a href="#Textos">Textos</a></li>
+    <li><a href="#Listas">Listas ordenadas e não ordenadas</a></li>
+    <li><a href="#Links">Links</a></li>
+    <li><a href="#Referências">Referências</a></li>
+  </ol>
+  O objetivo deste artigo é que você saia daqui sabendo criar seu primeiro site HTML simples.
+  </p>
+  <hr>
+
+
+
+  <!-- Seção: Ferramentas utilizadas -->
+  <h2 id="Ferramentas">Ferramentas utilizadas</h2>
+
+  <h3 id="VisualStudioCode">Visual Studio Code </h3>
+  <a href="#Inicio">Voltar ao inicio</a>
+
+  <p>
+    Esta ferramenta é uma (IDE) Integrated Development Environment ou Ambiente de Desenvolvimento Integrado em
+    português. É nela que vamos escrever nossos códigos. Pra criar os códigos HTML você pode utilizar outras ferramentas
+    como até mesmo um editor de texto simples, mas aqui vamos criar nossa página no Visual Studio Code.
+    Para
+  </p>
+  <p>
+    Você poderá fazer o download desta ferramenta no site oficial clicando <a href="https://code.visualstudio.com/"
+      target="_blank">aqui</a>
+  </p>
+  <p>
+    Após ter feito o download e a instalação, assim que abrir a ferramenta você poderá digitar na tela: "html:5" e em
+    seguida apertar a tecla "Tab" que logo será criado uma estrutura HTML pra você começar a criar sua página.
+  </p>
+  <p>
+    <img src="img/HTML 5 estrutura.png" alt="HTML5 estrutura">
+  </p>
+
+
+
+  <h3 id="Inspetor">Inspetor de elementos</h3>
+  <a href="#Inicio">Voltar ao inicio</a>
+
+  <p>
+    Esta ferramenta também chamada de "Ferramenta do desenvolvedor", é muito útil para visualizarmos elementos da página
+    web em que estamos.
+  </p>
+  <p>Ela está presente em diversos navegadores, mas se estiver utilizando o Chrome, você poderá usar
+    a tecla de atalho "F12" ou clicar nos três pontinhos no canto superior direito da sua tela e procurar a opção
+    "Ferramentas do desenvolvedor".
+  </p>
+  <p>
+    Ela também pode ser usada para aprender como a página web que você está visualizando foi feita. Pois ela te mostra o
+    código HTML que o desenvolvedor daquela página utilizou além de outras informações como o código "CSS" por exemplo.
+  </p>
+
+  <hr>
+
+  <!-- Seção: Estruturas básicas do HTML -->
+  <h2>Estruturas básicas do HTML</h2>
+  <a href="#Inicio">Voltar ao inicio</a>
+
+
+  <p>
+    Antes de começarmos a falar da estrutura em si, é necessário que você crie uma pasta no seu computador dedicada ao
+    projeto que irá iniciar.
+  </p>
+  <p>
+    Feito isso, você irá criar um novo arquivo dentro desta pasta chamado "index.html". Você pode colocar outro nome,
+    mas este nome se tornou padrão entre os desenvolvedores para indicar que esta é a página principal do site.
+  </p>
+  <p>
+    <img src="img/Index ponto html.png" alt="Index ponto html">
+  </p>
+  <p>
+    Sobre a estrutura do HTML, ela é reprensentada por 3 pontos. Ou melhor, por três "tags" principais. Uma "Tag" nada
+    mais é que um elemento representado por um sinal de menor "<", o nome da tag e um sinal de maior ">" . </p>
+      <p>
+        A primeira tag principal é a tag <mark>&lt;html&gt;</mark><mark>&lt;/html&gt;</mark>. Ela é a tag que diz ao
+        navegador que tudo que há dentro dela é um html. Quando a tag apresenta uma barra "/", significa que é uma tag
+        de fechamento.
+      </p>
+      <p>
+        A segunta tag principal é a <mark>&lt;head&gt;</mark><mark>&lt;/head&gt;</mark>. Significa "Cabeçalho" em
+        português. É responsável por pre-carregar a página antes de exibir pro usuário.
+      </p>
+      <p>
+        A terceira é a <mark>&lt;body&gt;</mark><mark>&lt;/body&gt;</mark>. Tudo que de fato vai aparecer para o usuário
+        quando navegar pela página.
+      </p>
+      <p>
+        Os três juntos são representados assim:
+      </p>
+      <p>
+        <mark>.&lt;html&gt;</mark>
+        <br><br>
+        <mark>..&lt;head&gt;</mark>
+        <br><br>
+        <mark>....&lt;body&gt;</mark>
+        <br><br>
+        <mark>....&lt;/body&gt;</mark>
+        <br><br>
+        <mark>..&lt;/head&gt;</mark>
+        <br><br>
+        <mark>.&lt;/html&gt;</mark>
+      </p>
+      <hr>
+
+      <!-- Seção: Falando sobre tags -->
+      <h2 id="Tags">Falando sobre tags</h2>
+      <a href="#Inicio">Voltar ao inicio</a>
+
+
+      <p>
+        Tags são elementos básicos do HTML que definem a estrutura e o conteúdo de uma página web. Elas são
+        representadas
+        por palavras-chave entre colchetes angulares como <mark>&lt;tag&gt;</mark>, e podem ter atributos que modificam
+        seu
+        comportamento.
+      </p>
+      <blockquote>
+        "As tags permitem que os navegadores interpretem e exibam o conteúdo corretamente."
+      </blockquote>
+
+      <h3>Explicação das tags</h3>
+      <p>Abaixo está uma breve explicação das principais tags:</p>
+
+      <ul>
+        <li><strong>&lt;h1&gt; até &lt;h6&gt;</strong>: Definem títulos, com <small>&lt;h1&gt;</small> sendo o mais
+          importante e <small>&lt;h6&gt;</small> o menos importante.</li>
+        <li><strong>&lt;p&gt;</strong>: Define um parágrafo de texto.</li>
+        <li><strong>&lt;mark&gt;</strong>: Destaca o texto com uma cor de fundo, geralmente amarelo.</li>
+        <li><strong>&lt;small&gt;</strong>: Exibe o texto em um tamanho menor que o padrão.</li>
+        <li><strong>&lt;i&gt;</strong>: Aplica formatação itálica ao texto.</li>
+        <li><strong>&lt;u&gt;</strong>: Sublinhar o texto.</li>
+        <li><strong>&lt;strong&gt;</strong>: Dá ênfase forte ao texto, exibindo-o em negrito.</li>
+        <li><strong>&lt;ol&gt;</strong>: Cria uma lista ordenada (numerada).</li>
+        <li><strong>&lt;ul&gt;</strong>: Cria uma lista não ordenada (com marcadores).</li>
+        <li><strong>&lt;li&gt;</strong>: Define um item de lista dentro de <small>&lt;ol&gt;</small> ou
+          <small>&lt;ul&gt;</small>.
+        </li>
+        <li><strong>&lt;a&gt;</strong>: Cria um link de hipertexto.</li>
+        <li><strong>&lt;hr&gt;</strong>: Insere uma linha horizontal.</li>
+        <li><strong>&lt;sub&gt;</strong>: Exibe o texto como subscrito.</li>
+        <li><strong>&lt;sup&gt;</strong>: Exibe o texto como sobrescrito.</li>
+        <li><strong>&lt;blockquote&gt;</strong>: Define uma citação em bloco.</li>
+        <li><strong>&lt;font&gt;</strong>: Define a fonte, cor e tamanho do texto (obsoleto no HTML5).</li>
+        <li><strong>&lt;del&gt;</strong>: Marca o texto como excluído, geralmente exibido com um traço no meio.</li>
+        <li><strong>&lt;abbr&gt;</strong>: Indica uma abreviação, podendo exibir o significado completo ao passar o
+          mouse.
+        </li>
+      </ul>
+
+      <!-- Seção: Atributos básicos -->
+      <h2 id="Atributos">Atributos básicos</h2>
+      <a href="#Inicio">Voltar ao inicio</a>
+
+      <p>
+        Atributos nada mais são que propriedades que as tags podem ter. Existem atributos que são mais genericos e podem
+        ser atribuidos a várias tags. Também existem atributos que são mais específicos que apenas uma ou poucas tags
+        podem ter.
+      </p>
+      <h3>Atributos globais</h3>
+      <p>
+        O (<strong>id=" " </strong>) é um atributo identificador. Quando se quer aplicar um efeito em java script,
+        utilizamos o
+        identificador para indicar em qual elemento será aplicado.
+      </p>
+      <p>
+        O (<strong>style=" " </strong>) é um atributo que serve para estilizar o elemento que está entre a tag. Em
+        outras palavras, serve para colocar comandos CSS diretamente na tag.
+      </p>
+
+      <h3>Atributos específicos</h3>
+      <p>
+        O (<strong>type=" " </strong>) Um atributo específico da tag <strong>&lt;input&gt;</strong> que serve para
+        indicar qual estilo de entrada de dados do input. O "input" exibe um campo de entrada de dados.
+      </p>
+
+      <hr>
+
+      <!-- Seção: Textos -->
+      <h2 id="Textos">Textos</h2>
+      <a href="#Inicio">Voltar ao inicio</a>
+
+
+      <p>
+        Algumas das principais tags voltadas para textos são:
+      </p>
+      <p>
+        <strong>&lt;h1&gt; até &lt;h6&gt;</strong>,
+        <strong>&lt;p&gt;</strong>, <strong>&lt;blockquote&gt;</strong>, <strong>&lt;mark&gt;</strong>,
+        <strong>&lt;i&gt;</strong>, <strong>&lt;u&gt;</strong>, <strong>&lt;sub&gt;</strong>,
+        <strong>&lt;sup&gt;</strong>.
+      </p>
+      <p>
+        Para aprender ainda mais e consultar mais tags e atributos disponíveis você poderá utilizar esse
+        site:<a href="https://www.w3schools.com"><strong>https://www.w3schools.com</strong></a>.
+      </p>
+      <hr>
+
+
+      <!-- Seção: Listas ordenadas e não ordenadas -->
+      <h2 id="Listas">Listas ordenadas e não ordenadas</h2>
+      <a href="#Inicio">Voltar ao inicio</a>
+
+      <p>
+        Tags para listas:
+      </p>
+      <h3>Ordenadas</h3>
+      <p>
+        <mark>.&lt;ol&gt;</mark>
+        <br><br>
+        <mark>..&lt;il&gt;</mark>
+        <mark>....&lt;/il&gt;</mark>
+        <br><br>
+        <mark>.&lt;/ol&gt;</mark>
+      </p>
+      <h3>Não ordenadas</h3>
+      <p>
+        <mark>.&lt;ul&gt;</mark>
+        <br><br>
+        <mark>..&lt;il&gt;</mark>
+        <mark>....&lt;/il&gt;</mark>
+        <br><br>
+        <mark>.&lt;/ul&gt;</mark>
+      </p>
+
+      <hr>
+
+
+      <!-- Seção: Links -->
+      <h2 id="Links">Links</h2>
+      <a href="#Inicio">Voltar ao inicio</a>
+
+
+      <p>
+        Para colocarmos um link na página usamos a tag <strong>&lt;a href="algumlink.com"&gt;</strong>. O atributo href
+        é onde você vai direcionar pra onde o usuário vai após o clique, colocando o link desejano no lugar do
+        "algumlink.com".
+      </p>
+      <p>
+        Também existe um atributo chamado (<strong>target=" " </strong>) que serve para escolher o
+        comportamento do link após
+        o clique.
+      </p>
+      <p>
+        "Self": O link exibe comportamento padrão e carrega na mesma página
+      </p>
+      <p>
+        "Blank": O link é aberto em uma nova guia.
+      </p>
+      <hr>
+
+      <!-- Seção: Referências -->
+      <h2 id="Referências">Referências</h2>
+      <a href="#Inicio">Voltar ao inicio</a>
+
+
+      <p>
+        Além do já mensionado site <a href="https://www.w3schools.com"><strong>https://www.w3schools.com</strong></a>.
+        Você também pode aprender mais em
+        <a href="https://www.w3bai.com/pt/index.html"><strong>https://www.w3bai.com/pt/index.html</strong></a> e
+        <a href="https://www.dio.me"><strong>https://www.dio.me</strong></a>.
+      </p>
+
+</body>
+
+</html>
